@@ -167,10 +167,9 @@ GameObject:
   - component: {fileID: 104062538}
   - component: {fileID: 104062537}
   - component: {fileID: 104062534}
-  - component: {fileID: 104062536}
-  - component: {fileID: 104062535}
   - component: {fileID: 104062541}
   - component: {fileID: 104062542}
+  - component: {fileID: 104062543}
   m_Layer: 3
   m_Name: Itachi
   m_TagString: Player
@@ -193,48 +192,6 @@ MonoBehaviour:
   controller: {fileID: 104062537}
   animator: {fileID: 104062541}
   runSpeed: 40
---- !u!58 &104062535
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104062533}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.17}
-  serializedVersion: 2
-  m_Radius: 0.15
---- !u!61 &104062536
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104062533}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.006960869, y: 0.11555132}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.81}
-    newSize: {x: 0.32, y: 0.81}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.22254705, y: 0.41740394}
-  m_EdgeRadius: 0
 --- !u!114 &104062537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +235,9 @@ MonoBehaviour:
       m_Calls: []
   Itachi: {fileID: 104062533}
   fireRate: 2
+  firerate: 0
   nextFire: 0
+  nextfire: 0
   FireRate: 20
   NextFire: 0
 --- !u!50 &104062538
@@ -410,6 +369,22 @@ MonoBehaviour:
   fireForce: 15
   fireRate: 10
   nextFire: 0
+--- !u!70 &104062543
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104062533}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.016747594, y: 0.0045802295}
+  m_Size: {x: 0.22134054, y: 0.63548404}
+  m_Direction: 0
 --- !u!1 &410437579
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,8 +728,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980165342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.95, z: 0}
-  m_LocalScale: {x: 2.001673, y: 1.8779255, z: 1}
+  m_LocalPosition: {x: 0.0544, y: 1.95, z: 0}
+  m_LocalScale: {x: 2.0902894, y: 1.8779255, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -772,11 +747,12 @@ GameObject:
   - component: {fileID: 2028623243}
   - component: {fileID: 2028623245}
   - component: {fileID: 2028623248}
-  - component: {fileID: 2028623247}
-  - component: {fileID: 2028623246}
   - component: {fileID: 2028623250}
   - component: {fileID: 2028623249}
   - component: {fileID: 2028623251}
+  - component: {fileID: 2028623254}
+  - component: {fileID: 2028623253}
+  - component: {fileID: 2028623252}
   m_Layer: 3
   m_Name: Naruto
   m_TagString: Player
@@ -874,48 +850,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &2028623246
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028623242}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.052653022, y: -0.07161135}
-  serializedVersion: 2
-  m_Radius: 0.16740547
---- !u!61 &2028623247
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028623242}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.039670106, y: 0.09160189}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.45, y: 0.47}
-    newSize: {x: 0.56, y: 0.51}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.3100726, y: 0.28679618}
-  m_EdgeRadius: 0
 --- !u!50 &2028623248
 Rigidbody2D:
   serializedVersion: 4
@@ -1016,3 +950,51 @@ MonoBehaviour:
   fireForce: 20
   fireRate: 10
   nextFire: 0
+--- !u!70 &2028623252
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028623242}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.121018805, y: 0.1374636}
+  m_Size: {x: 0.19650497, y: 0.20509811}
+  m_Direction: 0
+--- !u!70 &2028623253
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028623242}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.013605701, y: -0.0050378772}
+  m_Size: {x: 0.1936405, y: 0.2910289}
+  m_Direction: 0
+--- !u!70 &2028623254
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028623242}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.037952233, y: -0.16756545}
+  m_Size: {x: 0.34254196, y: 0.12914498}
+  m_Direction: 1

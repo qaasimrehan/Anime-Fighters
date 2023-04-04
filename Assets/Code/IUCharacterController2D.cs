@@ -44,11 +44,12 @@ public class IUCharacterController2D : MonoBehaviour
 
     public GameObject Itachi;
  public float fireRate = 2.0f;
+	public float firerate = 0.0f;
 
 
-
-   public float nextFire = 0.0f; 
-   public float FireRate = 20.0f;
+	public float nextFire = 0.0f;
+	public float nextfire = 0.0f;
+	public float FireRate = 20.0f;
    public float NextFire = 0.0f; 
 	private void FixedUpdate()
 	{
@@ -107,7 +108,17 @@ public class IUCharacterController2D : MonoBehaviour
 
          }
       }
-    }
+		if (Input.GetButtonDown("Fire4"))
+		{
+			if (Time.time > nextfire)//cooldown
+			{
+					Itachi.GetComponent<Animator>().Play("Single hit itachi");
+					NextFire = Time.time + firerate;
+				
+
+			}
+		}
+	}
 
 	
 
