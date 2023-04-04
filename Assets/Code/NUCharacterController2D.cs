@@ -44,11 +44,12 @@ public class NUCharacterController2D : MonoBehaviour
 
     public GameObject Naruto;
  public float fireRate = 2.0f;
+	public float firerate = 0.0f;
 
 
-
-   public float nextFire = 0.0f; 
-   public float FireRate = 20.0f;
+	public float nextFire = 0.0f;
+	public float nextfire = 0.0f;
+	public float FireRate = 20.0f;
    public float NextFire = 0.0f; 
 	private void FixedUpdate()
 	{
@@ -107,7 +108,17 @@ void Update(){
 
          }
       }
-}
+		if (Input.GetButtonDown("NFire4"))
+		{
+			if (Time.time > nextfire)
+			{//cooldown	
+					Naruto.GetComponent<Animator>().Play("Naruto Single Hit");
+					nextfire = Time.time + firerate;
+				
+
+			}
+		}
+	}
 	
 
 
