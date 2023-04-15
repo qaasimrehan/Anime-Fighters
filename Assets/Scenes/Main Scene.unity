@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 104062541}
   - component: {fileID: 104062542}
   - component: {fileID: 104062543}
+  - component: {fileID: 104062544}
   m_Layer: 3
   m_Name: Itachi
   m_TagString: Player
@@ -385,6 +386,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0.016747594, y: 0.0045802295}
   m_Size: {x: 0.22134054, y: 0.63548404}
   m_Direction: 0
+--- !u!114 &104062544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104062533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c06f86fbb813b4b8d0d41450d32a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  animator: {fileID: 104062541}
 --- !u!1 &410437579
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,6 +768,7 @@ GameObject:
   - component: {fileID: 2028623254}
   - component: {fileID: 2028623253}
   - component: {fileID: 2028623252}
+  - component: {fileID: 2028623255}
   m_Layer: 3
   m_Name: Naruto
   m_TagString: Player
@@ -1000,3 +1016,17 @@ CapsuleCollider2D:
   m_Offset: {x: -0.037952233, y: -0.16756545}
   m_Size: {x: 0.34254196, y: 0.12914498}
   m_Direction: 1
+--- !u!114 &2028623255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028623242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51da03b0fadbfe94aad9cc64cd40fcf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  animator: {fileID: 2028623245}
